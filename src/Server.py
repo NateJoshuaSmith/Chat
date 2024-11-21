@@ -9,7 +9,7 @@ CORS(app)  # Enable CORS for all routes
 messages = []
 
 # Configure the SQLite database URI
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'  # This will create 'app.db' file in the current directory
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////data/app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # To avoid a warning
 
 # Initialize SQLAlchemy with the app
