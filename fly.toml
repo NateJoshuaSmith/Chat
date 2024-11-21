@@ -7,6 +7,7 @@ app = 'chat-tcmfwa'
 primary_region = 'lax'
 
 [build]
+  builder = "heroku/buildpacks:python"  # Specify the buildpack for Python
 
 [http_service]
   internal_port = 3000
